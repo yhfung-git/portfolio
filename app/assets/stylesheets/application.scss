@@ -10,3 +10,10 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+body {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 50px; //height of the footer
+}
