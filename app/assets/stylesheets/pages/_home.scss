@@ -1,1 +1,21 @@
 // Specific CSS for your home-page
+span {
+  width: 50px;
+  height: 50px;
+  background: url(Maple.png);
+  background-size: cover;
+  pointer-events: none;
+  position: absolute;
+  animation: maple 2s linear forwards;
+}
+@keyframes maple {
+  0% {
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: translate(50%, 1000%);
+    filter: hue-rotate(360deg);
+    opacity: 0;
+  }
+}
