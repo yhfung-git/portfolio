@@ -6,6 +6,7 @@ import "bootstrap"
 document.onmousemove = (e) => {
   let body = document.querySelector("body");
   let maple = document.createElement("span");
+  maple.setAttribute("id", "maple");
   let x = e.pageX;
   let y = e.pageY;
   let size = Math.random() * 50;
