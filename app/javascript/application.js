@@ -19,5 +19,5 @@ document.onmousemove = (e) => {
 
   setTimeout(() => {
     maple.remove();
-  }, 2000);
+  }, 1000);
 };
