@@ -1,92 +1,25 @@
 .btn-gradient {
-  color: gray;
+  color: $slumber-gold;
   padding: 8px 24px;
-  font-weight: bold;
-  background: $slumber-blue;
-  transition: background 0.3s ease;
-}
-
-// .gradient-border {
-//   --border-width: 3px;
-//   position: relative;
-//   border-radius: var(--border-width);
-
-//   &::after {
-//     position: absolute;
-//     content: "";
-//     top: calc(-1 * var(--border-width));
-//     left: calc(-1 * var(--border-width));
-//     z-index: -1;
-//     width: calc(13% + var(--border-width) * 2);
-//     height: calc(100% + var(--border-width) * 2);
-//     background: linear-gradient(
-//       60deg,
-//       hsl(224, 85%, 66%),
-//       hsl(269, 85%, 66%),
-//       hsl(314, 85%, 66%),
-//       hsl(359, 85%, 66%),
-//       hsl(44, 85%, 66%),
-//       hsl(89, 85%, 66%),
-//       hsl(134, 85%, 66%),
-//       hsl(179, 85%, 66%)
-//     );
-//     background-size: 300% 300%;
-//     background-position: 0 50%;
-//     border-radius: calc(8 * var(--border-width));
-//     animation: moveGradient 4s alternate infinite;
-//   }
-// }
-// @keyframes moveGradient {
-//   50% {
-//     background-position: 100% 50%;
-//   }
-// }
-
-// .btn-gradient:hover {
-//   color: $slumber-green;
-//   background: $slumber-blue;
-// }
-
-//Colors
-$background: #fefefe;
-$text: #4b507a;
-
-$cyan: #60daaa;
-$yellow: #fbca67;
-$orange: #ff8a30;
-$red: #f45e61;
-$purple: #6477b9;
-$blue: #0eb7da;
-
-// Basic styles
-.btn {
   background: none;
   border: 0;
-  box-sizing: border-box;
-
-  // Using inset box-shadow instead of border for sizing simplicity
-  box-shadow: inset 0 0 0 2px gray;
-
-  // Required, since we're setting absolute on pseudo-elements
   position: relative;
-  vertical-align: middle;
+  // Using inset box-shadow instead of border for sizing simplicity
+  box-shadow: inset 0 0 0 1px $slumber-gold;
 
   &::before,
   &::after {
-    box-sizing: inherit;
     content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
   }
 }
 
 .draw {
-    transition: color 0.25s;
+  transition: color 0.25s;
 
   &::before,
   &::after {
-    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+    // Set border to invisible, so we don't see a border on a 0x0 element before the transition starts
     border: 2px solid transparent;
     width: 0;
     height: 0;
@@ -106,9 +39,9 @@ $blue: #0eb7da;
 
   &:hover {
     color: $slumber-green;
+    font-weight: bold;
   }
 
-  // Hover styles
   &:hover::before,
   &:hover::after {
     width: 100%;
@@ -116,7 +49,8 @@ $blue: #0eb7da;
   }
 
   &:hover::before {
-    border-top-color: $slumber-green; // Make borders visible
+    // Make borders visible
+    border-top-color: $slumber-green;
     border-right-color: $slumber-green;
     transition:
       width 0.25s ease-out, // Width expands first
@@ -124,7 +58,8 @@ $blue: #0eb7da;
   }
 
   &:hover::after {
-    border-bottom-color: $slumber-green; // Make borders visible
+    // Make borders visible
+    border-bottom-color: $slumber-green;
     border-left-color: $slumber-green;
     transition:
       border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
