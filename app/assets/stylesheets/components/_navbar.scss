@@ -11,7 +11,12 @@
 }
 
 .navbar-lewagon {
-  background: white;
+  background: transparent;
+  transition: 0.5s background-color ease;
+}
+
+.navbar-lewagon-active {
+  background-color: white;
 }
 
 .navbar-lewagon .navbar-collapse {
