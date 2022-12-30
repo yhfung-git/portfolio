@@ -4,4 +4,13 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   connect() {
   }
+
+  activeNavbar() {
+    if (window.scrollY >= window.innerHeight/3 ) {
+      this.element.classList.add("navbar-lewagon-active")
+    } else {
+      this.element.classList.remove("navbar-lewagon-active")
+    }
+  }
 }
+// this.element returns the controller’s HTML element

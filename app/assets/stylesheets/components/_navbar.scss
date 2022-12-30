@@ -17,6 +17,7 @@
 
 .navbar-lewagon-active {
   background-color: white;
+  font-weight: bold;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -25,13 +26,42 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+  margin-right: 20px;
+}
+.navbar-lewagon .navbar-brand img:hover {
+  scale: 1.1;
+  animation: bounceOut 0.4s linear;
+}
+
+@keyframes bounceOut {
+  0% {
+    transform: scale(1.5);
+  }
+
+  25% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  75% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 .nav-link {
   color: $slumber-gold;
+  margin: auto 20px;
 }
 
 .nav-link:hover {
   color: $slumber-green;
   font-weight: bold;
+  scale: 1.1;
 }
