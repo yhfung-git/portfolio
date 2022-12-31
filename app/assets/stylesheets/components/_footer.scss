@@ -6,13 +6,12 @@
   height: 50px;
   width: 100%;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
   position: absolute;
   bottom: 0;
 }
 .footer p {
   margin: 0;
-  color: #439A97;
+  color: $slumber-gold;
   font-size: 80%;
 }
 .footer-links {
@@ -20,12 +19,12 @@
   align-items: center;
 }
 .footer-links a {
-  color: rgba(0, 170, 170, .6);
+  color: $slumber-gold;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
 }
 .footer-links a:hover {
   scale: 1.2;
-  color: rgba(0, 170, 170, 1);
+  color: $slumber-green;
 }
