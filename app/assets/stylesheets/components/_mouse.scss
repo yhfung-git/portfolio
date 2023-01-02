@@ -2,14 +2,14 @@ $colorBg: $slumber-blue;
 $colorOutline: $slumber-gold;
 $colorOutlineFade: $slumber-green;
 
-$widthMouse: 52px;
-$heightMouse: 88px;
+$widthMouse: 42px;
+$heightMouse: 72px;
 $borderMouse: 6px;
 
 $posMouse: 8px;
 $posText: 2px;
 
-$sizeTrackball: 10px;
+$sizeTrackball: 8px;
 $posTrackball: 20px;
 $shrinkTrackball: 0.4;
 
@@ -27,7 +27,7 @@ $animDuration: 5s;
 }
 
 .mouse-p {
-  margin-top: 50px;
+  margin-top: 2rem;
   letter-spacing: 12px;
   text-indent: 12px;
   color: $colorOutline;
