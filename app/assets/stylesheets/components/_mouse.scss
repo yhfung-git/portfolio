@@ -1,6 +1,6 @@
-$colorBg: #222a30;
-$colorOutline: #ffffff;
-$colorOutlineFade: #4e5559;
+$colorBg: $slumber-blue;
+$colorOutline: $slumber-gold;
+$colorOutlineFade: $slumber-green;
 
 $widthMouse: 52px;
 $heightMouse: 88px;
@@ -17,20 +17,20 @@ $animDuration: 5s;
 
 @mixin bgGradient {
   background:
-    $colorOutlineFade
-    linear-gradient(
-      transparent 0%,
-      transparent 50%,
-      $colorOutline 50%,
-      $colorOutline 100%
-    );
+  $colorOutlineFade
+  linear-gradient(
+    transparent 0%,
+    transparent 50%,
+    $colorOutline 50%,
+    $colorOutline 100%
+  );
 }
 
 .mouse-p {
   margin-top: 50px;
   letter-spacing: 12px;
   text-indent: 12px;
-  color: $slumber-gold;
+  color: $colorOutline;
   animation:
     colorText $animDuration ease-out infinite,
     nudgeText $animDuration ease-out infinite;
@@ -39,8 +39,8 @@ $animDuration: 5s;
 .mouse {
   @include bgGradient;
   position: relative;
-  width: 52px;
-  height: 88px;
+  width: $widthMouse;
+  height: $heightMouse;
   border-radius: 100px;
   background-size: 100% 200%;
   animation:
@@ -60,7 +60,7 @@ $animDuration: 5s;
     border-radius: 100px;
   }
   &:after {
-    background-color: $colorOutline;
+    background-color: $colorOutlineFade;
     width: $sizeTrackball;
     height: $sizeTrackball;
     border-radius: 100%;
