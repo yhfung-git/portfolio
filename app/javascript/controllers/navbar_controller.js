@@ -6,7 +6,7 @@ export default class extends Controller {
   }
 
   activeNavbar() {
-    if (window.scrollY >= window.innerHeight/3 ) {
+    if (window.scrollY >= window.innerHeight/6 ) {
       this.element.classList.add("navbar-lewagon-active")
     } else {
       this.element.classList.remove("navbar-lewagon-active")
