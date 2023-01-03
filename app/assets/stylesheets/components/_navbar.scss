@@ -68,8 +68,9 @@
 
 // Scroll Line
 .scroll-line{
-  height: 2px;
-  margin-bottom: -2px;
-  background: $slumber-gold;
+  height: 4px;
+  background: $slumber-green;
   width: 100%;
+  position: fixed;
+  z-index: 3;
 }
