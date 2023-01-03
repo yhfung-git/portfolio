@@ -1,4 +1,4 @@
-// STYLING
+// Timeline Styling
 .timeline {
   ul {
     li {
@@ -79,7 +79,7 @@
   }
 }
 
-// ANIMATION
+// Timeline Animation
 .timeline {
   ul {
     li {
@@ -96,6 +96,7 @@
   }
 }
 
+// Timeline Screen Size
 @media screen and (max-width: 900px) {
   .timeline {
     ul {
@@ -133,4 +134,12 @@
       }
     }
   }
+}
+
+// Scroll Line
+.scroll-line{
+  height: 2px;
+  margin-bottom: -2px;
+  background: $slumber-gold;
+  width: 0%;
 }
