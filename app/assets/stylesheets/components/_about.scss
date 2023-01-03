@@ -25,13 +25,13 @@
         bottom: 0;
         width: 400px;
         padding: 30px;
-        background: $slumber-green;
+        background: rgba(27, 160, 152, .1);
         border-radius: 4px;
         display: flex;
         align-items: center;
         time {
           position: absolute;
-          background: $slumber-gold;
+          background: $slumber-green;
           width: 100%;
           height: 30px;
           left: 0;
