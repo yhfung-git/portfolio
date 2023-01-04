@@ -19,9 +19,18 @@
 
   <div class="banner">
     <h1 style="text-align: center;" id="Projects">My Projects</h1>
-    <%= link_to "https://francalaysian.com/", target: "_blank" do %>
-      <img src="https://francalaysian.com/wp-content/uploads/2021/04/LG_Francalaysian.png" alt="Francalaysian" class="project-image">
-    <% end %>
+    <div class="projects-container">
+      <div>
+        <%= link_to "https://francalaysian.com/", target: "_blank" do %>
+          <img src="https://francalaysian.com/wp-content/uploads/2021/04/LG_Francalaysian.png" alt="Francalaysian" class="project-image">
+        <% end %>
+      </div>
+      <div>
+        <%= link_to "https://www.speakitout.help/", target: "_blank" do %>
+          <img src="https://www.speakitout.help/assets/nav_bar-3f593ad566affb8edb65bb9ee16f549e63745ac29c01fd491fa728c74f089249.png" alt="Speakitout" class="project-image">
+        <% end %>
+      </div>
+    </div>
   </div>
 
   <div class="banner">
