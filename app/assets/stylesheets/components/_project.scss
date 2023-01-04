@@ -7,4 +7,14 @@
 .project-image {
   height: 200px;
   width: 200px;
+  border-radius: 3px;
+  filter: opacity(0.5);
+  transition: 0.5s;
+}
+
+.project-image:hover {
+  overflow: hidden;
+  filter: none;
+  scale: 1.05;
+  rotate: 5deg;
 }
