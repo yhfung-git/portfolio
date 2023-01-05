@@ -36,7 +36,7 @@
 //   color: $slumber-green;
 // }
 
-$timing: 0.3s;
+$timing: 265ms;
 
 @mixin transformScale($size: 1) {
   transform: scale($size);
@@ -45,21 +45,20 @@ $timing: 0.3s;
 }
 
 .footer-links {
-  list-style: none;
   display: flex;
   align-items: center;
 
   ul {
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 30px;
   }
 
   li {
-    margin: 0.15em;
+    margin: 1em;
     position: relative;
-    font-size: 2em;
+    font-size: 20px;
   }
 
   a {
@@ -76,28 +75,28 @@ $timing: 0.3s;
 
   a {
     &:before {
-        @include transformScale();
-        content: " ";
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-        display: block;
-        background: $slumber-gold;
-        transition: all $timing ease-out;
+      @include transformScale();
+      content: " ";
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      display: block;
+      background: $slumber-gold;
+      transition: all $timing ease-out;
     }
 
     &:hover:before {
-        transform: scale(0);
-        transition: all $timing ease-in;
+      transform: scale(0);
+      transition: all $timing ease-in;
     }
 
     &:hover i {
-        @include transformScale(2);
-        color: $slumber-gold;
-        background: $slumber-green;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: all $timing ease-in;
-    }
+      @include transformScale(2.2);
+      color: $slumber-gold;
+      background: -webkit-linear-gradient(45deg, $slumber-green, $slumber-green);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all $timing ease-in;
+  }
   }
 }
