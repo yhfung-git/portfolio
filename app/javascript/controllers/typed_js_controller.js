@@ -6,8 +6,8 @@ export default class extends Controller {
   connect() {
     new Typed(this.element, {
       strings: ["Click the button below to download my resume"],
-      typeSpeed: 30,
-      backDelay: 1000,
+      typeSpeed: 40,
+      backDelay: 2000,
       loop: true
     })
   }
