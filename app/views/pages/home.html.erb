@@ -1,7 +1,7 @@
 <%# Banner %>
 <div class="container">
   <div class="banner" id="top">
-    <div class="container">
+    <div class="container text-center">
       <h1>Hello! I'm Yong How!</h1>
       <p><span data-controller="typed-js"></span></p>
       <%= link_to "Download", download_path, class: "btn btn-gradient draw", target: "_blank" %>
@@ -13,12 +13,12 @@
   </div>
 
   <div class="banner">
-    <h1 style="text-align: center;" id="About">About Me</h1>
+    <h1 class="text-center" id="About">About Me</h1>
     <%= render "shared/timeline" %>
   </div>
 
   <div class="banner">
-    <h1 style="text-align: center;" id="Projects">Projects</h1>
+    <h1 class="text-center" id="Projects">Projects</h1>
     <div class="projects-container">
       <div>
         <%= link_to "https://francalaysian.com/", target: "_blank" do %>
