@@ -43,7 +43,7 @@ $timing: 265ms;
   li {
     margin: 1em;
     position: relative;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   a {
@@ -76,7 +76,7 @@ $timing: 265ms;
     }
 
     &:hover i {
-      @include transformScale(2.2);
+      @include transformScale(2);
       color: $slumber-gold;
       background: -webkit-linear-gradient(45deg, $slumber-green, $slumber-green);
       background-clip: text;
