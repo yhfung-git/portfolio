@@ -135,3 +135,20 @@
     }
   }
 }
+
+// Details
+.hard-skills {
+  h1, h2 {
+    text-transform: uppercase;
+  }
+
+  li {
+    color: $slumber-gold;
+    font-size: 20px;
+  }
+
+  ::marker {
+    color: $slumber-green;
+    font-size: 1.5em;
+  }
+}
