@@ -138,8 +138,17 @@
 
 // Details
 #hard-skills {
+
+  .hidden {
+    display: none;
+  }
+
   h1, h2 {
     text-transform: uppercase;
+  }
+
+  ul {
+    display: hidden;
   }
 
   li {
