@@ -5,29 +5,28 @@ export default class extends Controller {
   static targets = ["front", "data", "back", "tools", "uix", "video", "softwares"]
 
   connect() {
-    // console.log("FAQ connected");
-    // console.log(this.contentTarget);
   }
 
-  showFront() {
+  toggleFront() {
     this.frontTarget.classList.toggle("hidden")
   }
-  showData() {
+  toggleData() {
     this.dataTarget.classList.toggle("hidden")
   }
-  showBack() {
+  toggleBack() {
     this.backTarget.classList.toggle("hidden")
   }
-  showTools() {
+  toggleTools() {
     this.toolsTarget.classList.toggle("hidden")
   }
-  showUix() {
+  toggleUix() {
     this.uixTarget.classList.toggle("hidden")
   }
-  showVideo() {
+  toggleVideo() {
     this.videoTarget.classList.toggle("hidden")
   }
-  showSoftwares() {
+  toggleSoftwares() {
     this.softwaresTarget.classList.toggle("hidden")
   }
+
 }
