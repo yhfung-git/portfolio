@@ -136,18 +136,21 @@
   }
 }
 
-// Details
+// Skills
+.skills {
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
 #hard-skills {
 
   .hidden {
     display: none;
   }
 
-  h1, h2 {
-    text-transform: uppercase;
-  }
-
   h2 {
+    text-transform: uppercase;
     cursor: pointer;
   }
 
