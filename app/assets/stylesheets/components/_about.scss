@@ -141,6 +141,20 @@
   h1 {
     text-transform: uppercase;
     text-align: center;
+    font-size: 45px;
+  }
+
+  li {
+    color: $slumber-gold;
+    font-size: 20px;
+    padding: 0 0 10px 16px
+  }
+
+  li::marker {
+    content: "✔️";
+    color: transparent;
+    text-shadow: 0 0 $slumber-green;
+    font-size: 1rem;
   }
 }
 #hard-skills {
@@ -152,19 +166,12 @@
   h2 {
     text-transform: uppercase;
     cursor: pointer;
+    font-size: 25px;
+    text-align: center;
   }
 
   h2:hover {
     font-weight: bold;
   }
 
-  li {
-    color: $slumber-gold;
-    font-size: 20px;
-  }
-
-  ::marker {
-    color: $slumber-green;
-    font-size: 1.5em;
-  }
 }
