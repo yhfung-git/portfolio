@@ -12,15 +12,17 @@
     </div>
   </div>
 
+  <hr class="mt-5" style="color: #1BA098;">
+
   <%# About %>
   <div class="banner">
     <h1 class="text-center" id="About">About Me</h1>
     <%= render "shared/timeline" %>
     <div class="skills">
       <%= render "shared/hard_skills" %>
-      <div class="row mt-5">
+      <div class="row my-5">
         <div class="col-12 col-md-6 col-lg-4" id="soft-skills">
-          <h1 class="my-3">soft-skills</h1>
+          <h1 class="mt-5">soft skills</h1>
           <ul>
             <li>Organization</li>
             <li>Self-direction</li>
@@ -32,7 +34,7 @@
           </ul>
         </div>
         <div class="col-12 col-md-6 col-lg-4" id="languages">
-          <h1 class="my-3">languages</h1>
+          <h1 class="mt-5">languages</h1>
           <ul>
             <li>Chinese</li>
             <li>English</li>
@@ -43,7 +45,7 @@
           </ul>
         </div>
         <div class="col-12 col-md-6 col-lg-4" id="hobbies">
-          <h1 class="my-3">hobbies</h1>
+          <h1 class="mt-5">hobbies</h1>
           <ul>
             <li>Video Editing</li>
             <li>Photography</li>
@@ -55,6 +57,8 @@
     </div>
   </div>
 
+  <hr style="color: #1BA098; margin-top: 6em;">
+
   <%# Projects %>
   <div class="banner">
     <h1 class="text-center" id="Projects">Projects</h1>
@@ -63,12 +67,15 @@
         <%= link_to "https://francalaysian.com/", target: "_blank" do %>
           <img src="https://francalaysian.com/wp-content/uploads/2021/04/LG_Francalaysian.png" alt="Francalaysian" class="project-image">
         <% end %>
+        <p>Francalaysian<br><small>2014</small></p>
       </div>
       <div>
         <%= link_to "https://www.speakitout.help/", target: "_blank" do %>
           <img src="https://www.speakitout.help/assets/nav_bar-3f593ad566affb8edb65bb9ee16f549e63745ac29c01fd491fa728c74f089249.png" alt="Speakitout" class="project-image">
         <% end %>
+        <p>Spe@kitOut<br><small>2022</small></p>
       </div>
     </div>
   </div>
+  <hr class="mt-5" style="color: #1BA098;">
 </div>
