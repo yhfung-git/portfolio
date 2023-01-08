@@ -1,10 +1,44 @@
-<section id="hard-skills" data-controller="faq">
-  <h1 class="my-5">hard skills</h1>
+<section id="hard-skills">
+  <h1 class="mb-5">hard skills</h1>
   <div class="row">
+    <%# Back-end %>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <h2>back-end / OOP</h2>
+      <ul class="back-end-content hidden">
+        <li>Ruby</li>
+        <li>Ruby on Rails</li>
+      </ul>
+    </div>
+    <%# Database %>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <h2>Database</h2>
+      <ul class="database-content hidden">
+        <li>SQlite</li>
+        <li>PostgreSQL</li>
+      </ul>
+    </div>
+    <%# UI/UX %>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <h2>UI/UX</h2>
+      <ul class="ui-ux-content hidden">
+        <li>Figma</li>
+      </ul>
+    </div>
+    <%# Video Editing %>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <h2>Video Editing</h2>
+      <ul class="video-editing-content hidden">
+        <li>Adobe Premiere</li>
+        <li>Wondershare Filmora</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mt-5 justify-content-between">
     <%# Front-end %>
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <h2 data-action="click->faq#toggleFront">Front-end</h2>
-      <ul class="front-end-content hidden"  data-faq-target="front">
+      <h2>Front-end</h2>
+      <ul class="front-end-content hidden">
         <li>HTML</li>
         <li>CSS</li>
         <li>Javascript</li>
@@ -14,26 +48,10 @@
         <li>Sass</li>
       </ul>
     </div>
-    <%# Database %>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <h2 data-action="click->faq#toggleData">Database</h2>
-      <ul class="database-content hidden"  data-faq-target="data">
-        <li>SQlite</li>
-        <li>PostgreSQL</li>
-      </ul>
-    </div>
-    <%# Back-end %>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <h2 data-action="click->faq#toggleBack">back-end / OOP</h2>
-      <ul class="back-end-content hidden"  data-faq-target="back">
-        <li>Ruby</li>
-        <li>Ruby on Rails</li>
-      </ul>
-    </div>
     <%# Tools %>
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <h2 data-action="click->faq#toggleTools">tools</h2>
-      <ul class="tools-content hidden"  data-faq-target="tools">
+      <h2>tools</h2>
+      <ul class="tools-content hidden">
         <li>Git & GitHub</li>
         <li>Console UBUNTU</li>
         <li>VSCode</li>
@@ -44,28 +62,10 @@
         <li>WordPress</li>
       </ul>
     </div>
-  </div>
-
-  <div class="row mt-5">
-    <%# UI/UX %>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <h2 data-action="click->faq#toggleUix">UI/UX</h2>
-      <ul class="ui-ux-content hidden" data-faq-target="uix">
-        <li>Figma</li>
-      </ul>
-    </div>
-    <%# Video Editing %>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <h2 data-action="click->faq#toggleVideo">Video Editing</h2>
-      <ul class="video-editing-content hidden"  data-faq-target="video">
-        <li>Adobe Premiere</li>
-        <li>Wondershare Filmora</li>
-      </ul>
-    </div>
     <%# Softwares %>
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <h2 data-action="click->faq#toggleSoftwares">Softwares</h2>
-      <ul class="softwares-content hidden"  data-faq-target="softwares">
+      <h2>Softwares</h2>
+      <ul class="softwares-content hidden">
         <li>Word</li>
         <li>Excel</li>
         <li>PowerPoint</li>

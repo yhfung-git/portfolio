@@ -142,6 +142,23 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 45px;
+    background-color: $slumber-green;
+    color: $slumber-blue;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    background-color: $slumber-gold;
+    color: $slumber-blue;
+    margin-bottom: 0;
+  }
+
+  ul {
+    background-color: rgba(27, 160, 152, .1);
+    padding: 10px 0 0 30px;
   }
 
   li {
@@ -156,22 +173,8 @@
     text-shadow: 0 0 $slumber-green;
     font-size: 1rem;
   }
-}
-#hard-skills {
 
-  .hidden {
-    display: none;
+  #hard-skills {
+    padding-top: 200px;
   }
-
-  h2 {
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 25px;
-    text-align: center;
-  }
-
-  h2:hover {
-    font-weight: bold;
-  }
-
 }
