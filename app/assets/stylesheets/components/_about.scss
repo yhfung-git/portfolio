@@ -1,4 +1,13 @@
 // Timeline Styling
+.skills-title {
+  background-color: #1BA098;
+  color: #051622;
+  font-size: 40px !important;
+  position: relative;
+  width: 50%;
+  left: 25%;
+  border-radius: 4px;
+}
 .timeline {
   ul {
     padding-left: 0;
@@ -30,6 +39,9 @@
         border-radius: 4px;
         display: flex;
         align-items: center;
+        div:hover {
+          scale: 1.15;
+        }
         time {
           position: absolute;
           background: $slumber-green;
@@ -124,6 +136,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  .skills-title {
+    width: 85%;
+    left: 20px;
+    border-radius: 0 4px 4px 0;
+  }
   .timeline {
     ul {
       li {
