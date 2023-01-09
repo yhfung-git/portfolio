@@ -3,6 +3,8 @@
   top: 0;
   z-index: 3;
   padding: 0;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .container-fluid {
@@ -17,7 +19,6 @@
 
 .navbar-lewagon-active {
   background-color: white;
-  font-weight: bold;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -33,6 +34,7 @@
   animation: bounceOut 0.4s linear;
 }
 
+// logo Animation
 @keyframes bounceOut {
   0% {
     transform: scale(1.5);
@@ -58,6 +60,7 @@
 .nav-link {
   color: $slumber-gold;
   margin: auto 20px;
+  transition: all 0.3s linear;
 }
 
 .nav-link:hover {
