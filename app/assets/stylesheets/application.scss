@@ -23,3 +23,35 @@ body {
 h1,h2,h3,h4,h5,h6,p {
   color: $slumber-gold;
 }
+
+.title-animation {
+  transition: all 0.3s linear;
+}
+
+.title-animation:hover {
+  transform: translate3d(0, -10px, 22px);
+  scale: 1.1;
+  color: $slumber-green;
+}
+
+// Mousemove Animation
+#maple {
+  width: 50px;
+  height: 50px;
+  background: url(Maple.png);
+  background-size: cover;
+  pointer-events: none;
+  position: absolute;
+  animation: maple 1s linear forwards;
+}
+@keyframes maple {
+  0% {
+    opacity: 1;
+    // filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: translate(50%, 100%);
+    // filter: hue-rotate(360deg);
+    opacity: 0;
+  }
+}
