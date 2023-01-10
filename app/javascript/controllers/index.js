@@ -16,3 +16,5 @@ application.register("typed-js", TypedJsController)
 import "./timeline"
 
 import "./mousemove"
+
+import "./skills"
