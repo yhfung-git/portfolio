@@ -11,13 +11,14 @@ function isElementInViewport(el) {
 }
 
 function callbackFunc() {
+  // from top to bottom
   for (let i = 0; i < contents.length; i++) {
     if (isElementInViewport(contents[i])) {
       if(!contents[i].classList.contains("visible")){
         contents[i].classList.add("visible");
       }
     } else if(contents[i].classList.contains("visible")) {
-        contents[i].classList.remove("visible");
+      contents[i].classList.remove("visible");
     }
   }
 }
