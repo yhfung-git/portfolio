@@ -1,4 +1,4 @@
-let tags = document.querySelectorAll(".tag");
+let contents = document.querySelectorAll(".skills-content");
 
 function isElementInViewport(el) {
   let rect = el.getBoundingClientRect();
@@ -11,13 +11,13 @@ function isElementInViewport(el) {
 }
 
 function callbackFunc() {
-  for (let i = 0; i < tags.length; i++) {
-    if (isElementInViewport(tags[i])) {
-      if(!tags[i].classList.contains("visible")){
-        tags[i].classList.add("visible");
+  for (let i = 0; i < contents.length; i++) {
+    if (isElementInViewport(contents[i])) {
+      if(!contents[i].classList.contains("visible")){
+        contents[i].classList.add("visible");
       }
-    } else if(tags[i].classList.contains("visible")) {
-        tags[i].classList.remove("visible");
+    } else if(contents[i].classList.contains("visible")) {
+        contents[i].classList.remove("visible");
     }
   }
 }
