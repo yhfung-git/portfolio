@@ -14,7 +14,7 @@
 
 body {
   min-height: 100vh;
-  position: absolute;
+  position: relative;
   padding-bottom: 300px; //height of the footer
   cursor: auto;
   background: $body-color;
@@ -57,5 +57,11 @@ a {
     transform: translate(50%, 100%);
     // filter: hue-rotate(360deg);
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body  {
+    position: absolute;
   }
 }
