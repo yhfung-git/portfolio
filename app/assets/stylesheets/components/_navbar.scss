@@ -79,21 +79,10 @@
     margin-right: auto !important;
     display: contents;
   }
-}
-
-
-@media screen and (max-width: 420px) {
-  .navbar-brand,
-  .nav-link {
-    margin: auto 10px !important;
+  .navbar-brand {
+    margin: auto 20px;
   }
   .navbar-brand img {
     margin: 0 !important;
-  }
-  .container-fluid {
-    flex-wrap: initial !important;
-  }
-  .navbar {
-    width: 106%;
   }
 }
