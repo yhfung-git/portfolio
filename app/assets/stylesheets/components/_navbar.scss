@@ -68,3 +68,32 @@
   font-weight: bold;
   scale: 1.1;
 }
+
+@media screen and (max-width: 600px) {
+  .navbar-collapse {
+    flex-basis: auto;
+    align-items: center;
+    display: flex;
+  }
+  .me-auto {
+    margin-right: auto !important;
+    display: contents;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .navbar-brand,
+  .nav-link {
+    margin: auto 10px !important;
+  }
+  .navbar-brand img {
+    margin: 0 !important;
+  }
+  .container-fluid {
+    flex-wrap: initial !important;
+  }
+  .navbar {
+    width: 106%;
+  }
+}
