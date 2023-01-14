@@ -165,7 +165,7 @@
 
 @media screen and (max-width: 400px) {
   .timeline-title {
-    left: 35px;
+    left: 25px;
   }
   time {
     font-size: 16px !important;
@@ -174,7 +174,7 @@
     ul {
       padding: 0 35px;
       li {
-        margin-left: 0;
+        margin-left: -10px;
         div {
           max-width: calc(100vw - 80px);
           div {
