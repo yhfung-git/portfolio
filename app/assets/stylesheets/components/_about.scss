@@ -74,11 +74,11 @@
             letter-spacing: 1px;
           }
           p {
-            text-align: center;
+            text-align: left;
             margin-bottom: 0;
             margin-top: 10px;
             font-size: 15px;
-            font-style: italic;
+            letter-spacing: 1px;
           }
         }
       }
@@ -164,6 +164,9 @@
   .timeline-title {
     left: 55px;
   }
+  time {
+    font-size: 16px !important;
+  }
   .timeline {
     ul {
       padding: 0 35px;
@@ -171,6 +174,11 @@
         margin-left: 20px;
         div {
           max-width: calc(100vw - 80px);
+          div {
+            p {
+              text-align: center;
+            }
+          }
         }
         &:nth-of-type(even) {
           > div {
