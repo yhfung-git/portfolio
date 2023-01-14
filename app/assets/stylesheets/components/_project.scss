@@ -1,5 +1,5 @@
 .projects-container {
-  padding: 50px 0 80px 0;
+  padding: 50px 0 0 0;
   display: flex;
   justify-content: space-around;
 }
@@ -22,4 +22,22 @@
   filter: none;
   scale: 1.05;
   rotate: 5deg;
+}
+
+@media screen and (max-width: 470px) {
+  .projects-container {
+    text-align: center;
+    display: block;
+    div {
+      padding: 0 18px 0 18px;
+      margin: 0 45px 0 45px;
+      p {
+        padding-top: 20px !important;
+        margin-bottom: 70px;
+      }
+      img {
+        filter: opacity(1);
+      }
+    }
+  }
 }
