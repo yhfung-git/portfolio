@@ -1,5 +1,5 @@
 // Timeline Styling
-.skills-title {
+.timeline-title {
   background-color: #1BA098;
   color: #051622;
   font-size: 40px !important;
@@ -136,7 +136,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .skills-title {
+  .timeline-title {
     width: 85%;
     left: 20px;
     border-radius: 0 4px 4px 0;
@@ -146,7 +146,7 @@
       li {
         margin-left: 20px;
         div {
-          width: calc(100vw - 150px);
+          width: calc(100vw - 50px);
         }
         &:nth-of-type(even) {
           > div {
