@@ -20,12 +20,34 @@ body {
   background: $body-color;
 }
 
+@media screen and (max-width: 550px) {
+  body  {
+    position: absolute;
+  }
+}
+
 h1,h2,h3,h4,h5,h6,p {
   color: $slumber-gold;
 }
 
 a {
   text-decoration: none;
+}
+
+// Top
+.br {
+  display: none;
+}
+
+@media screen and (max-width: 780px ) {
+  .br {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 440px ) {
+  .title-animation {
+    font-size: 55px !important;
+  }
 }
 
 .title-animation {
@@ -57,11 +79,5 @@ a {
     transform: translate(50%, 100%);
     // filter: hue-rotate(360deg);
     opacity: 0;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  body  {
-    position: absolute;
   }
 }
