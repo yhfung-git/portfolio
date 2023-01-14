@@ -135,15 +135,16 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 580px) {
   .timeline-title {
     min-width: calc(100vw - 65px);
-    left: 20px;
-    border-radius: 0 4px 4px 0;
+    left: 40px;
+    border-radius: 4px 4px 4px 0;
     top: 1px;
   }
   .timeline {
     ul {
+      padding: 0 20px;
       li {
         margin-left: 20px;
         div {
@@ -160,8 +161,12 @@
 }
 
 @media screen and (max-width: 400px) {
+  .timeline-title {
+    left: 55px;
+  }
   .timeline {
     ul {
+      padding: 0 35px;
       li {
         margin-left: 20px;
         div {
