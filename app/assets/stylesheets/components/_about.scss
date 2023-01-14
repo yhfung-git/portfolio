@@ -137,7 +137,7 @@
 
 @media screen and (max-width: 600px) {
   .timeline-title {
-    width: 85%;
+    min-width: calc(100vw - 65px);
     left: 20px;
     border-radius: 0 4px 4px 0;
   }
@@ -146,7 +146,25 @@
       li {
         margin-left: 20px;
         div {
-          width: calc(100vw - 50px);
+          width: calc(100vw - 110px);
+        }
+        &:nth-of-type(even) {
+          > div {
+            left: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .timeline {
+    ul {
+      li {
+        margin-left: 20px;
+        div {
+          max-width: calc(100vw - 80px);
         }
         &:nth-of-type(even) {
           > div {
