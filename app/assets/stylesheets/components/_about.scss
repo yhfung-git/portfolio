@@ -34,7 +34,7 @@
         position: relative;
         bottom: 0;
         width: 400px;
-        padding: 26px;
+        padding: 15px;
         background: rgba(27, 160, 152, .1);
         border-radius: 4px;
         display: flex;
@@ -64,10 +64,11 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background: transparent;
-          padding: 30px 0 0 0;
+          padding: 20px 0;
+          margin-top: 30px;
           i {
             color: #1BA098;
+            padding: 5px 7px 0 7px;
           }
           h1 {
             font-size: 20px;
@@ -78,11 +79,11 @@
           }
           p {
             text-align: left;
-            margin-bottom: 0;
-            margin-top: 10px;
             font-size: 15px;
             letter-spacing: 1px;
             width: 100%;
+            margin: 10px 0 0 0;
+            display: flex;
           }
         }
       }
@@ -178,11 +179,6 @@
         margin-left: -10px;
         div {
           max-width: calc(100vw - 80px);
-          div {
-            p {
-              text-align: center;
-            }
-          }
         }
         &:nth-of-type(even) {
           > div {
