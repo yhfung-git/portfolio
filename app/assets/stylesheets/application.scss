@@ -43,7 +43,11 @@ a {
   .br {
     display: block !important;
   }
+  .title-animation {
+    letter-spacing: 0 !important;
+  }
 }
+
 @media screen and (max-width: 440px ) {
   .title-animation {
     font-size: 46px !important;
@@ -52,6 +56,7 @@ a {
 
 .title-animation {
   transition: all 0.3s linear;
+  letter-spacing: 0.2rem;
 }
 
 .title-animation:hover {
