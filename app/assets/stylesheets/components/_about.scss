@@ -233,12 +233,11 @@
 }
 
 // Skills Animation
-// from top to bottom
 .skills-content {
   opacity: 0;
   bottom: 50px;
   position: relative;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
     &.visible {
       opacity: 1;
       bottom: 0;
