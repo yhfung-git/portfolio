@@ -1,12 +1,26 @@
+#Projects {
+  margin: 0;
+  font-size: 60px;
+  font-weight: bold;
+}
+
 .projects-container {
   padding: 50px 0 0 0;
   display: flex;
   justify-content: space-around;
-}
 
-.projects-container p {
-  text-align: center;
-  padding-top: 30px;
+  .logo {
+    a {
+      display: flex;
+      justify-content: center;
+    }
+
+    p {
+      text-align: center;
+      padding-top: 30px;
+      font-size: 20px;
+    }
+  }
 }
 
 .project-image {
