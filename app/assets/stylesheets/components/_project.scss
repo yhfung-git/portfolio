@@ -8,8 +8,10 @@
   padding: 50px 0 0 0;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 
   .logo {
+    margin-top: 10px;
     a {
       display: flex;
       justify-content: center;
