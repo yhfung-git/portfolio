@@ -15,7 +15,7 @@
 body {
   min-height: 100vh;
   position: relative;
-  padding-bottom: 300px; //height of the footer
+  padding-bottom: 100px; //height of the footer
   cursor: auto;
   background: $body-color;
 }
@@ -34,37 +34,6 @@ a {
   text-decoration: none;
 }
 
-// Top
-.br {
-  display: none;
-}
-
-@media screen and (max-width: 780px ) {
-  .br {
-    display: block !important;
-  }
-  .title-animation {
-    letter-spacing: 0 !important;
-  }
-}
-
-@media screen and (max-width: 440px ) {
-  .title-animation {
-    font-size: 46px !important;
-  }
-}
-
-.title-animation {
-  transition: all 0.3s linear;
-  letter-spacing: 0.2rem;
-}
-
-.title-animation:hover {
-  transform: translate3d(0, -10px, 22px);
-  scale: 1.1;
-  color: $slumber-green;
-}
-
 // Mousemove Animation
 #maple {
   width: 50px;
@@ -75,6 +44,7 @@ a {
   position: absolute;
   animation: maple 1s linear forwards;
 }
+
 @keyframes maple {
   0% {
     opacity: 1;

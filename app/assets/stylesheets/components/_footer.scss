@@ -4,84 +4,19 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  height: 300px;
+  height: 100px;
   width: 100%;
   position: absolute;
   bottom: 0;
 }
-.footer h1 {
-  margin: 0;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 60px;
-  font-weight: bold;
-}
+// .footer h1 {
+//   margin: 0;
+//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+//   font-size: 60px;
+//   font-weight: bold;
+// }
 .footer p {
   margin: 0;
   color: $slumber-gold;
-  font-size: 80%;
-}
-
-$timing: 265ms;
-
-@mixin transformScale($size: 1) {
-  transform: scale($size);
-  -ms-transform: scale($size);
-  -webkit-transform: scale($size);
-}
-
-.footer-links {
-  display: flex;
-  align-items: center;
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-
-  li {
-    margin: 1em;
-    position: relative;
-    font-size: 25px;
-  }
-
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  i {
-    color: $slumber-blue;
-    position: absolute;
-    transition: all $timing ease-out;
-  }
-
-  a {
-    &:before {
-      @include transformScale();
-      content: " ";
-      width: 50px;
-      height: 50px;
-      border-radius: 100%;
-      display: block;
-      background: $slumber-gold;
-      transition: all $timing ease-out;
-    }
-
-    &:hover:before {
-      transform: scale(0);
-      transition: all $timing ease-in;
-    }
-
-    &:hover i {
-      @include transformScale(2);
-      color: $slumber-gold;
-      background: -webkit-linear-gradient(45deg, $slumber-green, $slumber-green);
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all $timing ease-in;
-    }
-  }
+  font-size: 90%;
 }

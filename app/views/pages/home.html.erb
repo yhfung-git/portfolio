@@ -6,8 +6,21 @@
       <p><span data-controller="typed-js"></span></p>
       <%= link_to "Download", download_path, class: "btn btn-gradient draw", target: "_blank" %>
     </div>
+    <div class="contact-links">
+      <ul>
+        <li>
+          <a href="https://github.com/yhfung-git" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a href="mailto:contact@yhfung.click?subject=yhfung.click | Contact Form" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/yhfung/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
     <div class="d-flex justify-content-center flex-column align-items-center">
-    <img src="<%= asset_path("myAvatar.svg")%>" style="margin: 30px 0 30px 0;">
+    <img src="<%= asset_path("Myself.jpg")%>" style="margin: 15px 0 15px 0; height: 250px; width: 250px; border-radius: 50%;">
       <div class="mouse mt-4"></div>
       <p class="mouse-p">Scroll</p>
     </div>
@@ -96,6 +109,6 @@
     <%= render "shared/timeline" %>
   </div>
 
-  <hr class="mt-5" style="color: #1BA098;">
+  <hr class="mt-5 mb-0" style="color: #1BA098;">
 
 </div>
