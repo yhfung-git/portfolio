@@ -207,6 +207,7 @@
     background-color: $slumber-green;
     color: $slumber-blue;
     margin-bottom: 0;
+    text-transform: uppercase;
   }
 
   ul {
@@ -242,4 +243,14 @@
       opacity: 1;
       bottom: 0;
     }
+}
+
+.addition-padding {
+  padding-top: 7px;
+}
+
+@media screen and (max-width: 992px) {
+  .addition-padding {
+    padding-top: 0;
+  }
 }
